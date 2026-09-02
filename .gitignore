@@ -1,0 +1,28 @@
+# Frontend dependencies and builds
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Backend builds
+backend/bin/
+backend/obj/
+
+# Python environment and cache
+ai-service/.venv/
+ai-service/__pycache__/
+*.pyc
+
+# Private configuration
+.env
+.env.*
+!.env.example
+appsettings.Development.json
+
+# Editor and operating system
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
