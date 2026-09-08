@@ -1,4 +1,4 @@
-import {
+﻿import {
   ArrowRight,
   BrainCircuit,
   ChartNoAxesCombined,
@@ -6,29 +6,14 @@ import {
   Sparkles,
 } from "lucide-react";
 
+import Navbar from "./components/navigation/Navbar";
+import LogoIntro from "./components/LogoIntro";
+
 function App() {
   return (
     <main className="app">
-      <nav className="navbar">
-        <a className="brand" href="/" aria-label="NexHire AI home">
-          <span className="brand-icon">
-            <BrainCircuit size={22} />
-          </span>
-
-          <span>NexHire</span>
-          <span className="brand-accent">AI</span>
-        </a>
-
-        <div className="navigation-links">
-          <a href="#platform">Platform</a>
-          <a href="#solutions">Solutions</a>
-          <a href="#security">Security</a>
-        </div>
-
-        <button className="button button-secondary" type="button">
-          Sign in
-        </button>
-      </nav>
+      <LogoIntro />
+      <Navbar />
 
       <section className="hero">
         <div className="hero-content">
@@ -83,7 +68,10 @@ function App() {
           <div className="intelligence-card">
             <div className="card-header">
               <div>
-                <span className="card-label">AI talent intelligence</span>
+                <span className="card-label">
+                  AI talent intelligence
+                </span>
+
                 <h2>Candidate Match</h2>
               </div>
 
